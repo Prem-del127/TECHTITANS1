@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Police Station Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #002f6c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #002f6c;
+    }
+    .btn {
+      background-color: #005a9c;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Local Police Station</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>File an FIR</h2>
+    <p>If you need to report a crime or incident, please file an FIR using the button below.</p>
+    <a href="#fir-form" class="btn">File FIR</a>
+  </div>
+
+  <div class="card">
+    <h2>Emergency Contact Details</h2>
+    <ul>
+      <li><strong>Police Control Room:</strong> 100</li>
+      <li><strong>Women Helpline:</strong> 1091</li>
+      <li><strong>Fire Department:</strong> 101</li>
+      <li><strong>Ambulance:</strong> 102</li>
+      <li><strong>Station Contact:</strong> +91-9876543210</li>
+    </ul>
+  </div>
+
+  <div class="card" id="fir-form">
+    <h2>FIR Submission Form</h2>
+    <form>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="contact">Contact Number:</label><br>
+      <input type="tel" id="contact" name="contact" required><br><br>
+
+      <label for="incident">Incident Description:</label><br>
+      <textarea id="incident" name="incident" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Submit FIR</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

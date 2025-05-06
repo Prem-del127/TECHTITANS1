@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chhotki Pona</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">
+                    <img src="im logo.png" width="90px" height="90px" alt="Logo">
+                </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="schemes.html">SCHEMES </a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+
+                    <li><a href="#"><u>CONTACT US</u><br>+916203533062</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-form-container">
+            <div class="content">
+                <h1><u>CHHOTKI-PONA</u></h1>
+                <h4>Chhotki Pona is a village located in the Chitarpur tehsil of Ramgarh district in Jharkhand, India.</h4>
+                <h4>It covers a geographical area of about 163.39 hectares and has a population of approximately 2,639 people, with 1,398 males.</h4>
+                <h4>The village falls under the postal code 825101 and is part of the administrative region of Ramgarh.</h4>
+                <h4>• Agriculture is the primary occupation, with crops like rice, wheat, and vegetables commonly grown.</h4>
+                <h4>• Basic education and healthcare facilities have been improving in recent years.</h4>
+                <h4>• The village represents the simplicity and strong community spirit typical of rural Jharkhand.</h4>
+            </div>
+
+            <form action="#" class="form">
+                <h1>CSC Login</h1>
+                <input type="email" name="email" class="box" placeholder="Enter Username">
+                <input type="password" name="password" class="box" placeholder="Enter Password">
+                <input type="submit" value="LOGIN" class="login-btn">
+                <p class="link">Don't have an account?</p>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector(".form");
+      
+          form.addEventListener("submit", function (e) {
+            e.preventDefault(); 
+            const email = form.email.value.trim();
+            const password = form.password.value;
+            if (email === "techtitans74@gmail.com" && password === "12345") {
+              window.location.href = "hii.html";
+            } else {
+              alert("Incorrect email or password. Please try again.");
+            }
+          });
+        });
+      </script>
+        
+</body>
+</html>

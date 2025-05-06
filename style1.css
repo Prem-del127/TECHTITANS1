@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    color:rgb(247, 244, 244);
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    flex-direction: border-box;
+
+   
+    
+}
+#k{
+    color :rgb(78, 87, 188);
+    background-color: rgb(26, 66, 101);
+    height: 50px;  
+}
+
+
+
+#y{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.5) 30%), 
+    url("farmers\ 2.jpeg") no-repeat center center/cover;
+    height: 00%;
+}
+
+
